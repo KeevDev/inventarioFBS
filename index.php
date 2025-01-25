@@ -1,9 +1,9 @@
 <?php
-// session_start(); 
+session_start(); 
 require_once './config/db.php';
-// if (isset($_SESSION['conn'])){
-
-// }
+if (!isset($_SESSION['conn'])){
+    return "NO ES POSIBLE USAR LA PAGINA";
+}
 require "views/menu.php";
 
 

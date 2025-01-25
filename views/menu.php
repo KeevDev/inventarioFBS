@@ -1,6 +1,6 @@
 <?php
 define('BASE_URL', '/'); 
-// require_once $_SERVER['DOCUMENT_ROOT'] . '/inventarioFBS/config/db.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
 
 function menu()
 {
