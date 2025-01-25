@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 use Dotenv\Dotenv;
-$dotenv = Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . '/');
+$dotenv = Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
 $dotenv->load();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
