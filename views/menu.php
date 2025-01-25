@@ -1,5 +1,5 @@
 <?php
-define('BASE_URL', '/inventarioFBS/'); 
+define('BASE_URL', '/'); 
 // require_once $_SERVER['DOCUMENT_ROOT'] . '/inventarioFBS/config/db.php';
 
 function menu()
