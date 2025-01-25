@@ -16,7 +16,6 @@ if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/config/db.php')) {
 }
 
 // Continuar con el resto del código
-?>
 // if (!isset($_SESSION['conn'])){
 //     return "NO ES POSIBLE USAR LA PAGINA";
 // }
