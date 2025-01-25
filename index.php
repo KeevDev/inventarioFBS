@@ -19,7 +19,7 @@ if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/config/db.php')) {
 // if (!isset($_SESSION['conn'])){
 //     return "NO ES POSIBLE USAR LA PAGINA";
 // }
-require "views/menu.php";
+// require "views/menu.php";
 
 
 

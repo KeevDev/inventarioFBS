@@ -1,4 +1,5 @@
 <?php
+define('BASE_URL', ''); 
 // require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
 
 function menu()
@@ -39,16 +40,16 @@ function menu()
                 <a class="nav-link active" href="' . BASE_URL . 'index.php">
                     <i class="bi bi-speedometer2 me-2"></i> Dashboard
                 </a>
-                <a class="nav-link" href="views/inventario.php">
+                <a class="nav-link" href="' . BASE_URL . 'views/inventario.php">
                     <i class="bi bi-box-seam me-2"></i> Inventario
                 </a>
-                <a class="nav-link" href="views/ventas.php">
+                <a class="nav-link" href="' . BASE_URL . 'views/ventas.php">
                     <i class="bi bi-cart4 me-2"></i> Ventas
                 </a>
-                <a class="nav-link" href="views/articulos.php">
+                <a class="nav-link" href="' . BASE_URL . 'views/articulos.php">
                     <i class="bi bi-basket me-2"></i> Artículos
                 </a>
-                <a class="nav-link" href="views/entrada_almacen.php">
+                <a class="nav-link" href="' . BASE_URL . 'views/entrada_almacen.php">
                     <i class="bi bi-truck me-2"></i> Entradas de Almacén
                 </a>
 
