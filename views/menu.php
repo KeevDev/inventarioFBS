@@ -1,5 +1,5 @@
 <?php
-define('BASE_URL', $_SERVER['DOCUMENT_ROOT'].'/');
+define('BASE_URL', '');
 // require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
 
 function menu()
