@@ -1,24 +1,24 @@
 <?php
 session_start(); 
 // Intenta incluir el archivo de configuración
-// if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/config/db.php')) {
-//     try {
-//         require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
-//     } catch (Exception $e) {
-//         // Maneja errores si ocurren dentro de db.php
-//         echo "<p style='color: red;'>Error al cargar la configuración de la base de datos. Por favor, inténtelo más tarde.</p>";
-//         error_log("Error al incluir db.php: " . $e->getMessage(), 3, $_SERVER['DOCUMENT_ROOT'] . '/logs/error.log');
-//     }
-// } else {
-//     // Si el archivo no existe, muestra un mensaje amigable
-//     echo "<p style='color: red;'>No se encontró el archivo de configuración de la base de datos.</p>";
-//     error_log("Archivo db.php no encontrado.", 3, $_SERVER['DOCUMENT_ROOT'] . '/logs/error.log');
-// }
+if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/config/db.php')) {
+    try {
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
+    } catch (Exception $e) {
+        // Maneja errores si ocurren dentro de db.php
+        echo "<p style='color: red;'>Error al cargar la configuración de la base de datos. Por favor, inténtelo más tarde.</p>";
+        error_log("Error al incluir db.php: " . $e->getMessage(), 3, $_SERVER['DOCUMENT_ROOT'] . '/logs/error.log');
+    }
+} else {
+    // Si el archivo no existe, muestra un mensaje amigable
+    echo "<p style='color: red;'>No se encontró el archivo de configuración de la base de datos.</p>";
+    error_log("Archivo db.php no encontrado.", 3, $_SERVER['DOCUMENT_ROOT'] . '/logs/error.log');
+}
 
 // Continuar con el resto del código
-// if (!isset($_SESSION['conn'])){
-//     return "NO ES POSIBLE USAR LA PAGINA";
-// }
+if (!isset($_SESSION['conn'])){
+    return "NO ES POSIBLE USAR LA PAGINA";
+}
 // require "views/menu.php";
 
 
