@@ -1,10 +1,10 @@
 <?php
-session_start(); 
-require_once './config/db.php';
-if (isset($_SESSION['conn'])){
+// session_start(); 
+// require_once './config/db.php';
+// if (isset($_SESSION['conn'])){
 
-}
-require "views/menu.php";
+// }
+// require "views/menu.php";
 
 
 
@@ -82,7 +82,6 @@ require "views/menu.php";
 <body>
     <!-- Barra de navegación superior -->
     <div id="menu">
-        <?php echo menu()?>
     </div>
 
     <!-- Contenido Principal -->
