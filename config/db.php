@@ -1,9 +1,9 @@
 <?php
 
-$host = '193.203.175.121'; 
-$db = 'u925077191_db_fbs'; 
-$user = 'u925077191_kev'; 
-$pass = 'e#!Ls#;4jt8Z'; 
+$host = ''; 
+$db = ''; 
+$user = ''; 
+$pass = ''; 
 
 $conn = new mysqli($host, $user, $pass, $db);
 
