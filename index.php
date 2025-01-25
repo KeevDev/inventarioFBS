@@ -1,9 +1,9 @@
 <?php
 // session_start(); 
-// require_once './config/db.php';
-// if (isset($_SESSION['conn'])){
+require_once './config/db.php';
+if (isset($_SESSION['conn'])){
 
-// }
+}
 // require "views/menu.php";
 
 
