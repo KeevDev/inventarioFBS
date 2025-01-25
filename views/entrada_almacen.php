@@ -3,7 +3,7 @@ require "menu.php";
 
 
 session_start(); 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/inventarioFBS/config/db.php';
+// require_once $_SERVER['DOCUMENT_ROOT'] . '/inventarioFBS/config/db.php';
 
 
 
