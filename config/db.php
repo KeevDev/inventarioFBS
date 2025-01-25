@@ -6,10 +6,10 @@ $dotenv->load();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$host = getenv('DB_HOST');
-$db = getenv('DB_NAME'); 
-$user = getenv('DB_USER'); 
-$pass = getenv('DB_PASS'); 
+$host = $_SERVER['DB_HOST'];
+$db =  $_SERVER['DB_NAME']; 
+$user =  $_SERVER['DB_USER']; 
+$pass =  $_SERVER['DB_PASS']; 
 
 
 $conn = new mysqli($host, $user, $pass, $db);
@@ -20,5 +20,5 @@ if ($conn->connect_error) {
 
 $_SESSION['conn'] = $conn;
 
-echo "Conexión exitosa!";
+// echo "Conexión exitosa!";
 ?>
