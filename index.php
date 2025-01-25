@@ -97,7 +97,9 @@ session_start();
 <body>
     <!-- Barra de navegación superior -->
     <div id="menu">
-        <?php echo menu()?>
+        <?php
+        //  echo menu()
+         ?>
     </div>
 
     <!-- Contenido Principal -->
