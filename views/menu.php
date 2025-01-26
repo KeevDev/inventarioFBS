@@ -1,6 +1,8 @@
 <?php
-define('BASE_URL', ''); 
+define('BASE_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/inventarioFBS');
+// define('BASE_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/');
 // require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/inventarioFBS/config/db.php';
 
 function menu()
 {
@@ -37,21 +39,19 @@ function menu()
         </div>
         <div class="offcanvas-body">
             <nav class="nav flex-column">
-                <a class="nav-link active" href="' . BASE_URL . 'index.php">
-                    <i class="bi bi-speedometer2 me-2"></i> Dashboard
-                </a>
-                <a class="nav-link" href="' . BASE_URL . 'views/inventario.php">
-                    <i class="bi bi-box-seam me-2"></i> Inventario
-                </a>
-                <a class="nav-link" href="' . BASE_URL . 'views/ventas.php">
-                    <i class="bi bi-cart4 me-2"></i> Ventas
-                </a>
-                <a class="nav-link" href="' . BASE_URL . 'views/articulos.php">
-                    <i class="bi bi-basket me-2"></i> Artículos
-                </a>
-                <a class="nav-link" href="' . BASE_URL . 'views/entrada_almacen.php">
-                    <i class="bi bi-truck me-2"></i> Entradas de Almacén
-                </a>
+            <a class="nav-link active" href="' . BASE_URL . '/index.php">
+                <i class="bi bi-speedometer2 me-2"></i> Dashboard
+            </a>
+            <a class="nav-link" href="' . BASE_URL . '/views/ventas.php">
+                <i class="bi bi-cart4 me-2"></i> Ventas
+            </a>
+            <a class="nav-link" href="' . BASE_URL . '/views/articulos.php">
+                <i class="bi bi-basket me-2"></i> Artículos
+            </a>
+            <a class="nav-link" href="' . BASE_URL . '/views/entrada_almacen.php">
+                <i class="bi bi-truck me-2"></i> Entradas de Almacén
+            </a>
+
 
                 <hr class="my-3 border-secondary">
 

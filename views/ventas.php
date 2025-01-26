@@ -1,7 +1,8 @@
 <?php
 session_start(); 
 require "menu.php"; 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
+// require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/inventarioFBS/config/db.php';
 
 
 
@@ -129,24 +130,6 @@ function ventaproducto(){
         font-family: 'Arial', sans-serif;
     }
 
-    .navbar {
-        background-color: var(--bg-dark-light) !important;
-        border-bottom: 2px solid var(--primary-color);
-    }
-
-    .nav-link {
-        color: var(--text-color) !important;
-        font-weight: 500;
-    }
-
-    .nav-link:hover {
-        color: var(--secondary-color) !important;
-    }
-
-    .sidebar-offcanvas {
-        width: 270px;
-        background-color: var(--bg-dark-light) !important;
-    }
 
     .card {
         background-color: var(--card-bg);
@@ -295,7 +278,7 @@ function ventaproducto(){
                 <div class="card-body">
                     <h5 class="card-title">Ventas Recientes</h5>
                     <p class="card-text">Consulta las ventas más recientes realizadas.</p>
-                    <button class="btn btn-secondary" onclick="window.location.href='#'">Ver Ventas Recientes</button>
+                    <button class="btn btn-primary" onclick="window.location.href='#'">Ver Ventas Recientes</button>
                 </div>
             </div>
         </div>
@@ -306,7 +289,7 @@ function ventaproducto(){
                 <div class="card-body">
                     <h5 class="card-title">Historial de Ventas</h5>
                     <p class="card-text">Accede al historial completo de todas las ventas.</p>
-                    <button class="btn btn-secondary" onclick="window.location.href='#'">Ver Historial</button>
+                    <button class="btn btn-primary" onclick="window.location.href='#'">Ver Historial</button>
                 </div>
             </div>
         </div>
